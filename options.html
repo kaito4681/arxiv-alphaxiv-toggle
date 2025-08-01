@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Arxiv Alphaxiv Toggle - Options</title>
+        <link rel="stylesheet" href="options.css" />
+        <script src="options.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>
+                <svg
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    style="
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 8px;
+                        color: #667eea;
+                    "
+                >
+                    <path d="M16 3h5v5" />
+                    <path d="M8 21H3v-5" />
+                    <path d="M21 8L8 21" />
+                    <path d="M3 16l13-13" />
+                </svg>
+                Arxiv Alphaxiv Toggle
+            </h1>
+
+            <div class="option-group">
+                <label for="newTabCheckbox">
+                    <input type="checkbox" id="newTabCheckbox" />
+                    Open in new tab
+                </label>
+                <div class="description">
+                    When enabled, the toggled URL will open in a new tab instead
+                    of replacing the current tab.
+                </div>
+            </div>
+
+            <div class="option-group">
+                <label class="input-label" for="customUrl">Custom URL</label>
+                <input
+                    type="text"
+                    id="customUrl"
+                    placeholder="Enter your custom URL pattern"
+                />
+                <div class="description">
+                    When the current tab is neither arxiv nor alphaxiv, this URL
+                    will be opened. If this field is empty, nothing will be
+                    opened.
+                </div>
+            </div>
+
+            <button id="saveButton">Save Settings</button>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+{
+    "name": "arxiv-alphaxiv-toggle",
+    "version": "0.1.0",
+    "description": "A browser extension that allows users to easily toggle between arxiv.org and alphaxiv.org for enhanced paper reading experience",
+    "scripts": {
+        "lint": "prettier --write *.js *.json *.html *.css",
+		"build": "zip -r arxiv-alphaxiv-toggle.zip manifest.json background.js options.js options.html options.css icons/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kaito4681/arxiv-alphaxiv-toggle.git"
+    },
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/kaito4681/arxiv-alphaxiv-toggle/issues"
+    },
+    "homepage": "https://github.com/kaito4681/arxiv-alphaxiv-toggle#readme",
+    "devDependencies": {
+        "prettier": "^3.6.2"
+    }
+}
